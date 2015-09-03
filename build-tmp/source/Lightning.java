@@ -3,8 +3,6 @@ import processing.data.*;
 import processing.event.*; 
 import processing.opengl.*; 
 
-import processing.sound.*; 
-
 import java.util.HashMap; 
 import java.util.ArrayList; 
 import java.io.File; 
@@ -17,8 +15,6 @@ import java.io.IOException;
 public class Lightning extends PApplet {
 
 
-SoundFile file;
-
 int startX=250;
 int startY=0;
 int endX=250;
@@ -29,7 +25,6 @@ public void setup()
   size(500,500);
   background(0,0,0);
   strokeWeight(2);
-  file = new SoundFile(this, "thunder.mp3");
 }
 
 public void draw()
@@ -58,7 +53,6 @@ startX=250;
 startY=0;
 endX=250;
 endY=0;
-file.play();
 }
 
   static public void main(String[] passedArgs) {
