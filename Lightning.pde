@@ -14,10 +14,6 @@ void setup()
 
 void draw()
 {
-	clear();
-int startY=0;
-int endX=250;
-int endY=0;
 	int startX=250+(int)(Math.random()*512-256);
 	int r=(int)(Math.random()*100+200);
 	int g=(int)(Math.random()*100+200);
