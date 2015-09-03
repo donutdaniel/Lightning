@@ -22,21 +22,24 @@ int endY=0;
 
 public void setup()
 {
+	clouds();
   size(500,500);
   background(0,0,0);
   strokeWeight(2);
-  frameRate(5);
+  clouds();
 }
 
 public void draw()
 {
+//clouds();
 	int startX=250+(int)(Math.random()*512-256);
 	int r=(int)(Math.random()*100+200);
 	int g=(int)(Math.random()*100+200);
 	int b=(int)(Math.random()*150);
-		stroke (r,g,b);
+		//stroke (r,g,b);
 	while (endX<500)
 	{
+		stroke (r,g,b);
 		int changeX=(int)(Math.random()*19-9);
 		int changeY=(int)(Math.random()*10);
 		endX=startX+changeX;
@@ -56,6 +59,20 @@ endX=250;
 endY=0;
 }
 
+public void clouds() {
+	noStroke();
+  fill(153);
+ ellipse(0,0,150,100);
+ ellipse(150,0,200,120);
+ ellipse(260,0,150,100);
+ ellipse(300,0,130,110);
+ ellipse(400,0,100,120);
+ ellipse(500,0,160,134);
+
+
+
+
+}
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "Lightning" };
     if (passedArgs != null) {
