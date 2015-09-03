@@ -25,6 +25,7 @@ public void setup()
   size(500,500);
   background(0,0,0);
   strokeWeight(2);
+  frameRate(60);
 }
 
 public void draw()
@@ -49,7 +50,8 @@ clouds();
 
 public void mousePressed()
 {
-clear();
+	background(0);
+	clouds();
 startX=250;
 startY=0;
 endX=250;

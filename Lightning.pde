@@ -34,7 +34,8 @@ clouds();
 
 void mousePressed()
 {
-clear();
+	background(0);
+	clouds();
 startX=250;
 startY=0;
 endX=250;
